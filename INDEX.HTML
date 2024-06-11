@@ -1,0 +1,176 @@
+<html>
+<head>
+  <title>CSS website layout</title>
+  <style>
+   body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  /*style the header */
+  .header {
+    padding:180px;
+    text-align: center;
+    background: white;
+    background-image: url("bck.jpg");
+    background-repeat: no-reapet;
+
+  }
+
+  * {
+    box sizing: border-box;
+  }
+  /*style the top navigation bar*/
+  .topnav{
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /* style the topnav links */
+  .topnav a {
+   float: left;
+   display:  block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+
+ /* change color on hover */
+ .topnav a:hover {
+  backgroud-color: #ddd;
+  color: black;
+}
+
+/*create two unequal coloums that floats next to each other*/
+.leftcolumn{
+  float: left;
+  width: 75%;
+
+}
+/*right column*/
+.rightcolumn{
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding left: 20px; 
+}
+/* fake image*/
+.fakeimg{
+  background-color: #aaa;
+  width: 100%;
+  padding: 20Px;
+}
+/*add acard effect for articles*/
+.card {
+ background-color: white;
+ padding: 20px;
+ margin-top: 20px;
+}
+/*clear floats after the columns*/
+.row:: after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+/*footer*/
+.footer{
+ padding: 20px;
+ text-align: center;
+ background: #ddd;
+ margin-top: 20px;
+}
+/* responsive layout - when the screen is less than 800px wide, make the two columnstack on top each other instead of next to each other*/
+@media screen and (max-width: 800px){
+ .leftcolumn, .rightcolumn{
+  width: 100%;
+  padding: 0;
+}
+}
+/* responsive layout - when the screen is less than 400px wide, make the navigation stack on top off each other instead of next to each other*/
+@media screen and (max-width: 400px) {
+  .topnav a {
+   float: none;
+   width: 100%;
+ }
+}
+
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1></h1>
+		<p></p>
+	</div>
+
+	<div class="topnav">
+    <a href ="#">Jam Tangan Wanita</a>
+    <a href ="#">Jam Tangan Pria</a>
+    <a href ="#">Jam Tangan Couple</a>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+     <div class="card">
+      <h2>Jam Tangan</h2>
+      <h5>Tilte description, mei 05, 2024</h5>
+      <img src="iklan1.png"height="500px"width="100%">
+      <p>Jam tangan FOSIL</p>
+      <p>Jam tangan atau arloji adalah penunjuk waktu yang dipakai di pergelangan tangan manusia dengan tampilan waktu yang terus bertambah. Kegunaan utama jam tangan ialah untuk menunjukan waktu pada saat tertentu dan menghitung rentang waktu antara dua kejadian pada waktu yang berbeda. Arloji umumnya memiliki tiga macam jarum, yaitu jarum jam yang pendek, jarum menit yang lebih panjang dan jarum detik yang paling panjang. Pergeseran penunjukan jarum terjadi tiap mencapai 60 skala, dimulai dari jarum detik ke jarum menit dan dari jarum menit ke jarum jam.[1] Jam tangan pertama kali diperkenalkan pada abad ke-16. Pada saat itu semua jam tangan dan alat penunjuk waktu lainnya menggunakan mesin penggerak mekanik manual (hand-winding). Jam tangan tertua yang diketahui adalah jam tangan milik Ratu Inggris Elizabeth I yang dibuat oleh Robert Dudley pada tahun 1571. Dari abad 16 hingga awal abad 20, jam tangan hanya digunakan oleh wanita, sedangkan pria menggunakan jam saku.[2] .</p>
+    </div>
+    <div class="card">
+      <h2>Jam Tangan Fosil dial biru</h2>
+      <h5> mei 5, 2024</h5>
+      <img src="jam5.webp"height="500px"width="100%">
+      <p>Fosil dial biru, warnanya fresh</p>
+      <p>  Kenalan dengan jam tangan Fosil yuk! Jam tangan dengan desain ini cocok sekali untuk kamu yang berkepribadian ceria dan suka mengeksplorasi hal-hal baru.</p>
+    </div>
+    <div class="card">
+      <h2>Jam Tangan SMARTWATCH</h2>
+      <h5>mei 5, 2024</h5>
+      <img src="jam7.webp"height="400px"width="100%">
+      <p>Smartwatch</p>
+      <p>  Cewek bumi merapat! Bikin penampilanmu makin sempurna dengan jam tangan fosil. Didesain khusus menggunakan kulit buaya asli sehingga jam terkesan lebih lembut dan halus saat dipakai. Kunjungi website resmi kami untuk pemesanan.</p>
+    </div>
+    <div class="card">
+     <h2>Jam Tangan Pria</h2>
+     <h5>mei 5, 2024</h5>
+     <img src="jam8.jpg"height="600px"width="100%">
+     <p>Khusus Pria</p>
+     <p>  Jam tangan fosil khusus pria kembali tersedia! Jam ekslusif yang punya desain simple dan elegan ini sudah bisa anda pesan kembali melalui official website kami..</p>
+   </div>
+   <div class="card">
+    <h2>Jam Tangan Pria</h2>
+    <h5> smei 5, 2024</h5>
+    <img src="jam10.jpg"height="500px"width="100%">
+    <p> Macam-macam pilihan</p>
+    <p> ada banyak pilihan yang baru lohh! desainnya juga menarik.</p>
+  </div>
+</div>
+<div class="rightcolumn">
+  <div class="card">
+   <h2>About me</h2>
+   <img src="logo.png"eight="150px"width="100%">       		
+ </div>
+ <div classs="card">
+   <h3>popular post</h3>
+   <img src="jam1.webp"eight="150px"width="100%">
+   <img src="jam2.jpg"height="250px"width="100%">
+   <img src="jam3.webp"height="200px"width="100%">
+   <img src="jam4.webp"height="200px"width="100%">
+ </div>
+ <div class="card">
+   <h3>Follow Me</h3>
+   <p> Untuk info lebih lanjut kamu bisa cek media sosial kami ya </p>
+ </div>
+</div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+
+</body>
+</html>
